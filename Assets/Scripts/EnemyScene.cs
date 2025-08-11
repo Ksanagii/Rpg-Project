@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class EnemyScene : MonoBehaviour
 {
-    bool detect;
+    public bool detect;
     [SerializeField] float moveSpeed;
-    [SerializeField] GameObject player;
+    public GameObject player;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        detect = false;
     }
 
     // Update is called once per frame
@@ -16,13 +18,29 @@ public class EnemyScene : MonoBehaviour
     {
         if(detect)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime); // move em direcao ao player
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 
+                moveSpeed * Time.deltaTime); // move em direcao ao player
         }
     }
 
     private void OnDrawGizmos()
     {
+        PolygonCollider2D poly = GetComponentInChildren<PolygonCollider2D>();
+        if (poly == null) return;
 
+        Gizmos.color = Color.yellow;
+
+        // O PolygonCollider2D pode ter multiplos caminhos (paths)
+        for (int p = 0; p < poly.pathCount; p++) // Para cada caminho do poligono
+        {
+            Vector2[] points = poly.GetPath(p); // Pega os pontos do caminho atual
+            for (int i = 0; i < points.Length; i++) // Para cada ponto do caminho
+            {
+                Vector2 globalA = poly.transform.TransformPoint(points[i]); // Transforma o ponto local para global
+                Vector2 globalB = poly.transform.TransformPoint(points[(i + 1) % points.Length]); // Transforma o proximo ponto local para global (usando modulo para fechar o poligono)
+                Gizmos.DrawLine(globalA, globalB); // Desenha uma linha entre os pontos
+            }
+        }
 
     }
 }
