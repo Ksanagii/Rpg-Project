@@ -12,7 +12,7 @@ public class DetectZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enemyScene.detect)
+        if(EnemyScene.detect)
             Rotation();
 
         
@@ -30,7 +30,7 @@ public class DetectZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            enemyScene.detect = true;
+            EnemyScene.detect = true;
         }
     }
     
@@ -38,7 +38,7 @@ public class DetectZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            enemyScene.detect = false;
+            EnemyScene.detect = false;
         }
     }
     

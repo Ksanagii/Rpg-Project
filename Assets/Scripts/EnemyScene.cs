@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyScene : MonoBehaviour
 {
-    public bool detect;
+    public static bool detect;
     [SerializeField] float moveSpeed;
     public GameObject player;
 
