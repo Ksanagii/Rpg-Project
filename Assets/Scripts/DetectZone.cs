@@ -15,8 +15,6 @@ public class DetectZone : MonoBehaviour
         if(EnemyScene.detect)
             Rotation();
 
-        
-
     }
 
     void Rotation()

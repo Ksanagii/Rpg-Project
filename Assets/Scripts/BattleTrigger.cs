@@ -5,16 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class BattleTrigger : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public static bool startBattle;
 
-    // Update is called once per frame
-    void Update()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
     {
-        
+        startBattle = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -25,16 +21,18 @@ public class BattleTrigger : MonoBehaviour
             {
                 // INICIAR BATALHA NORMAL
                 Debug.Log("Normal battle Started");
+                startBattle = true;
+                BattleManager.Instance.lastEnemyBattled = gameObject; // Salva o inimigo atual no BattleManager
                 StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha
             }
             else
             {
                 // INICIAR BATALHA COM ALGUM BUFF PRO PLAYER (A DECIDIR)
                 Debug.Log("Buffed battle Started");
+                startBattle = true;
                 StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha
 
             }
-
 
         }
     }
