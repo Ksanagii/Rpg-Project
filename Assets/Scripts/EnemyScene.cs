@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EnemyScene : MonoBehaviour
 {
-    public static bool detect;
+    public bool detect;
+    public string enemyID;
     [SerializeField] float moveSpeed;
     public GameObject player;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +20,7 @@ public class EnemyScene : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, 
                 moveSpeed * Time.deltaTime); // move em direcao ao player
+            
         }
     }
 

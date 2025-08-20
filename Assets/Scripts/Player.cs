@@ -10,9 +10,11 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        if (BattleManager.Instance != null && BattleManager.Instance.playerTransform != Vector3.zero && SceneManager.GetActiveScene().name == "Mundo") // Verifica se o BattleManager existe, se a posicao do player nao eh zero e se a cena atual eh "Mundo"
+        
+        CameraFollow cameraFollow = FindFirstObjectByType<CameraFollow>();
+        if (cameraFollow != null)
         {
-            transform.position = BattleManager.Instance.playerTransform; // Define a posicao do player para a posicao salva no BattleManager
+            cameraFollow.ResetCameraPosition(transform.position);
         }
     }
     // Update is called once per frame
@@ -20,8 +22,13 @@ public class Player : MonoBehaviour
     {
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
-        Vector2 direction = new Vector2(xRaw, yRaw);
+        Vector2 direction = new(xRaw, yRaw);
+        if (direction.magnitude > 1)
+            direction = direction.normalized; // Normaliza a direcao para que a velocidade seja constante nas diagonais
 
-        transform.position = new Vector2(transform.position.x + (direction.x * velocity * Time.deltaTime), transform.position.y + (direction.y * velocity * Time.deltaTime));
+        // Move o player
+        transform.position = new(
+            transform.position.x + (direction.x * velocity * Time.deltaTime),
+            transform.position.y + (direction.y * velocity * Time.deltaTime));
     }
 }

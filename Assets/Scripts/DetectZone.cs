@@ -12,7 +12,7 @@ public class DetectZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(EnemyScene.detect)
+        if(enemyScene.detect)
             Rotation();
 
     }
@@ -21,14 +21,14 @@ public class DetectZone : MonoBehaviour
     {
         Vector2 offset = transform.position - enemyScene.player.transform.position;
         float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); // Ajusta a rotação do objeto para apontar na direção do player
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle - 90)); // Ajusta a rotaï¿½ï¿½o do objeto para apontar na direï¿½ï¿½o do player
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            EnemyScene.detect = true;
+            enemyScene.detect = true;
         }
     }
     
@@ -36,7 +36,7 @@ public class DetectZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            EnemyScene.detect = false;
+            enemyScene.detect = false;
         }
     }
     

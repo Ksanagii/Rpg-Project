@@ -7,11 +7,17 @@ public class CameraFollow : MonoBehaviour
     [Range(0, 10)]
     public float smoothCam;
     public Vector3 minValue, maxValue;
+
+
+    private void Start()
+    {
+
+    }
     void FixedUpdate()
     {
         Follow();
     }
-    
+
     void Follow()
     {
         Vector3 targetPosition = target.position + offset;
@@ -23,5 +29,11 @@ public class CameraFollow : MonoBehaviour
         Vector3 smoothPosition = Vector3.Lerp(transform.position, boundPosition, smoothCam * Time.deltaTime);
         transform.position = smoothPosition;
     }
+
+    public void ResetCameraPosition(Vector3 playerPosition)
+    {
+        transform.position = playerPosition;
+    }
+
 
 }

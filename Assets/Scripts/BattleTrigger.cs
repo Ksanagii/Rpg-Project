@@ -17,20 +17,32 @@ public class BattleTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if(EnemyScene.detect)
+            if (BattleManager.Instance.player != null)
+            {
+                BattleManager.Instance.SetPlayerPosition(); // Salva a posicao do player no BattleManager
+                Debug.Log("posicao do player salva");
+            }
+            
+
+            // Verifica se o inimigo esta detectando o player
+            // Se sim, inicia uma batalha normal, se nao, inicia uma batalha com algum buff pro player
+            // (A logica de buff ainda nao foi implementada, entao por enquanto so inicia uma batalha normal)
+
+            if (GetComponentInParent<EnemyScene>().detect)
             {
                 // INICIAR BATALHA NORMAL
                 Debug.Log("Normal battle Started");
                 startBattle = true;
-                BattleManager.Instance.lastEnemyBattled = gameObject; // Salva o inimigo atual no BattleManager
-                StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha
+                BattleManager.Instance.battleEnemiesID.Add(GetComponentInParent<EnemyScene>().enemyID);
+                StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha (para alguma animação ou efeito visual)
             }
             else
             {
-                // INICIAR BATALHA COM ALGUM BUFF PRO PLAYER (A DECIDIR)
+                // INICIAR BATALHA COM BUFF
                 Debug.Log("Buffed battle Started");
+                BattleManager.Instance.battleEnemiesID.Add(GetComponentInParent<EnemyScene>().enemyID);
                 startBattle = true;
-                StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha
+                StartCoroutine(WaitForSecondsToBattle(2f));
 
             }
 
