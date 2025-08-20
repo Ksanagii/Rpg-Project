@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: d49fc5f79f70518458f524a3d1081907
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3106812803344737785
+    second: Prota - sprite sheet_0
+  - first:
+      213: 8407410687197755064
+    second: Prota - sprite sheet_1
+  - first:
+      213: 1052487935099888975
+    second: Prota - sprite sheet_2
+  - first:
+      213: -1202685042492264055
+    second: Prota - sprite sheet_3
+  - first:
+      213: 7078753334349142262
+    second: Prota - sprite sheet_4
+  - first:
+      213: 7214647447741658670
+    second: Prota - sprite sheet_5
+  - first:
+      213: -6021438141156061300
+    second: Prota - sprite sheet_6
+  - first:
+      213: 4730161559521845471
+    second: Prota - sprite sheet_7
+  - first:
+      213: -3148931088923261384
+    second: Prota - sprite sheet_8
+  - first:
+      213: -2919354546979329204
+    second: Prota - sprite sheet_9
+  - first:
+      213: -5912803541441111418
+    second: Prota - sprite sheet_10
+  - first:
+      213: 6267032525661396895
+    second: Prota - sprite sheet_11
+  - first:
+      213: -3405740934308512468
+    second: Prota - sprite sheet_12
+  - first:
+      213: 3809427723049419751
+    second: Prota - sprite sheet_13
+  - first:
+      213: 2306820064090533150
+    second: Prota - sprite sheet_14
+  - first:
+      213: -3581103372816234415
+    second: Prota - sprite sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prota - sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 186
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5aff6b8cd9d1b20800000000000000
+      internalID: 3106812803344737785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 186
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6be33c97f1da470800000000000000
+      internalID: 8407410687197755064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 186
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45630e53303b9e00800000000000000
+      internalID: 1052487935099888975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 186
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981b29173543f4fe0800000000000000
+      internalID: -1202685042492264055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 126
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f81e7a17a8cc3260800000000000000
+      internalID: 7078753334349142262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 126
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26f15ef0a39f1460800000000000000
+      internalID: 7214647447741658670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 126
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f876fd9ed8f6ca0800000000000000
+      internalID: -6021438141156061300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 126
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0e18d70e8e4a140800000000000000
+      internalID: 4730161559521845471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 66
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8368b8ebbdfbc44d0800000000000000
+      internalID: -3148931088923261384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 66
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b20e5c18e5c77d0800000000000000
+      internalID: -2919354546979329204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 66
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a1bb5a18081fda0800000000000000
+      internalID: -5912803541441111418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 66
+        width: 20
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fdddfb0e8f8f650800000000000000
+      internalID: 6267032525661396895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 6
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2db8852aa06cb0d0800000000000000
+      internalID: -3405740934308512468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 6
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3c2e5b45ecdd430800000000000000
+      internalID: 3809427723049419751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 6
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d2cd050a8730020800000000000000
+      internalID: 2306820064090533150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prota - sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 6
+        width: 20
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158c557b47d5d4ec0800000000000000
+      internalID: -3581103372816234415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5d9a10993e44fbb45ae54eaf794479aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Prota - sprite sheet_0: 3106812803344737785
+      Prota - sprite sheet_1: 8407410687197755064
+      Prota - sprite sheet_10: -5912803541441111418
+      Prota - sprite sheet_11: 6267032525661396895
+      Prota - sprite sheet_12: -3405740934308512468
+      Prota - sprite sheet_13: 3809427723049419751
+      Prota - sprite sheet_14: 2306820064090533150
+      Prota - sprite sheet_15: -3581103372816234415
+      Prota - sprite sheet_16: -1617842571
+      Prota - sprite sheet_2: 1052487935099888975
+      Prota - sprite sheet_3: -1202685042492264055
+      Prota - sprite sheet_4: 7078753334349142262
+      Prota - sprite sheet_5: 7214647447741658670
+      Prota - sprite sheet_6: -6021438141156061300
+      Prota - sprite sheet_7: 4730161559521845471
+      Prota - sprite sheet_8: -3148931088923261384
+      Prota - sprite sheet_9: -2919354546979329204
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
