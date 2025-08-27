@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float velocity;
     Rigidbody2D rb;
+    public static Vector2 direction;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class Player : MonoBehaviour
     {
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
-        Vector2 direction = new(xRaw, yRaw);
+        direction = new(xRaw, yRaw);
         if (direction.magnitude > 1)
             direction = direction.normalized; // Normaliza a direcao para que a velocidade seja constante nas diagonais
 
@@ -30,5 +31,7 @@ public class Player : MonoBehaviour
         transform.position = new(
             transform.position.x + (direction.x * velocity * Time.deltaTime),
             transform.position.y + (direction.y * velocity * Time.deltaTime));
+
+
     }
 }
