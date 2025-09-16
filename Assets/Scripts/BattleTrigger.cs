@@ -37,7 +37,7 @@ public class BattleTrigger : MonoBehaviour
                 StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha (para alguma animação ou efeito visual)
             }
 
-            /*
+            
             else
             {
                 // INICIAR BATALHA COM BUFF
@@ -47,7 +47,7 @@ public class BattleTrigger : MonoBehaviour
                 StartCoroutine(WaitForSecondsToBattle(2f));
 
             }
-            */
+            
 
         }
     }

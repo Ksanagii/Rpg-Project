@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e9681af2fcd40d40b71cfbe2f615a2d, type: 3}
-  m_Name: Esqueleto
+  m_Name: Ladrao
   m_EditorClassIdentifier: 
-  unitID: Esqueleto
-  portrait: {fileID: 2058965598896311990, guid: 413587448038a2e49ab45fa62e6c2267, type: 3}
-  anim: {fileID: 9100000, guid: f4e0aa50c8a629546918326c1f4fb8fa, type: 2}
-  unitLevel: 1
-  maxHP: 30
-  damage: 5
-  defense: 2
-  exp: 5
+  unitID: Ladrao
+  portrait: {fileID: -3982536871426416344, guid: 79055f5bdd7ff544e8554040ef7e0cde, type: 3}
+  anim: {fileID: 9100000, guid: b812b0f016b24434fb0b4e8368131d76, type: 2}
+  unitLevel: 2
+  maxHP: 18
+  damage: 4
+  defense: 3
+  exp: 10

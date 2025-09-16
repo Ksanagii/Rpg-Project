@@ -155,8 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d85328614085e48beaa962ca32e28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitID: eduardo
-  unitLevel: 99
+  unitID: Player
+  portrait: {fileID: 0}
+  unitLevel: 1
   maxHP: 20
   currentHP: 20
   damage: 5

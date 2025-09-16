@@ -1,6 +1,8 @@
 using System.Collections;
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
@@ -22,6 +24,9 @@ public class BattleSystem : MonoBehaviour
 
     public BattleHUD playerHUD;
     public BattleHUD enemyHUD;
+
+    public Animator enemyAnimator;
+    public Animator playerAnimator;
     void Start()
     {
         state = BattleState.START;
@@ -36,7 +41,13 @@ public class BattleSystem : MonoBehaviour
         enemyUnit = EnemyGo.GetComponent<Unit>();
 
         var enemySO = BattleManager.Instance.enemySO;
+
+        enemyAnimator = EnemyGo.GetComponentInChildren<Animator>();
+        enemyAnimator.runtimeAnimatorController = enemySO.anim;
+        playerAnimator = PlayerGo.GetComponentInChildren<Animator>();
+
         enemyUnit.unitID = enemySO.unitID;
+        enemyUnit.portrait = enemySO.portrait;
         enemyUnit.unitLevel = enemySO.unitLevel;
         enemyUnit.maxHP = enemySO.maxHP;
         enemyUnit.currentHP = enemySO.maxHP;
@@ -57,11 +68,13 @@ public class BattleSystem : MonoBehaviour
     IEnumerator PlayerAttack()
     {
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
-        enemyHUD.SetHP(enemyUnit.currentHP);
+        enemyHUD.SetHP(enemyUnit);
+        playerAnimator.SetTrigger("Attack");
         dialogueText.text = "O " + enemyUnit.unitID + " recebeu " + playerUnit.damage + " de dano!";
         state = BattleState.ENEMYTURN;
-        yield return new WaitForSeconds(2f);
-
+        yield return new WaitForSeconds(1.5f);
+        enemyAnimator.SetTrigger("Hurt");
+        yield return new WaitForSeconds(1.5f);
         
         if (isDead)
         {
@@ -79,12 +92,12 @@ public class BattleSystem : MonoBehaviour
     {
         actionsCanvas.SetActive(false);
         dialogueText.text = enemyUnit.unitID + " Ataca!";
+        enemyAnimator.SetTrigger("Attack");
         yield return new WaitForSeconds(1f);
-
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
-        playerHUD.SetHP(playerUnit.currentHP);
+        playerHUD.SetHP(playerUnit);
         dialogueText.text = "O " + playerUnit.unitID + " recebeu " + enemyUnit.damage + " de dano!";
-
+        playerAnimator.SetTrigger("Hurt");
         yield return new WaitForSeconds(2f);
 
         if (isDead)
@@ -100,11 +113,22 @@ public class BattleSystem : MonoBehaviour
         
     }
 
-
+    IEnumerator WonBattle()
+    {
+        dialogueText.text = "Voce venceu a batalha!";
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Mundo");
+    }
+    IEnumerator LostBattle()
+    {
+        dialogueText.text = "Voce Perdeu a batalha!";
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Menu");
+    }
 
     void PlayerTurn()
     {
-        dialogueText.text = "Escolha uma ação:";
+        dialogueText.text = "Escolha uma aÃ§Ã£o:";
         actionsCanvas.SetActive(true);
     }
 
@@ -119,11 +143,13 @@ public class BattleSystem : MonoBehaviour
     {
         if (state == BattleState.WON)
         {
-            dialogueText.text = "Você venceu a batalha!";
+            dialogueText.text = "Voce venceu a batalha!";
+            StartCoroutine(WonBattle());
         }
         else if (state == BattleState.LOST)
         {
-            dialogueText.text = "Você foi derrotado!";
+            dialogueText.text = "Voce foi derrotado!";
+            StartCoroutine(LostBattle());
         }
     }
 }

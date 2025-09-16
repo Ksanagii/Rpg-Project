@@ -7,29 +7,27 @@ public class BattleHUD : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI levelText;
     public Slider hpText;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public TextMeshProUGUI hpTextValue;
+    public Image portrait;
 
     public void SetHUD(Unit unit)
     {
         nameText.text = unit.unitID;
+        hpTextValue.text = unit.currentHP.ToString() + "/ " + unit.maxHP.ToString();
         levelText.text = "Lvl " + unit.unitLevel;
         hpText.maxValue = unit.maxHP;
         hpText.value = unit.currentHP;
+        if (unit.portrait != null)
+        {
+            portrait.sprite = unit.portrait;
+        }
     }
 
-    public void SetHP(int hp)
+    public void SetHP(Unit unit)
     {
-        hpText.value = hp;
+        hpText.value = unit.currentHP;
+        if(unit.currentHP < 0)
+            unit.currentHP = 0;
+        hpTextValue.text = unit.currentHP.ToString() + "/ " + unit.maxHP.ToString();
     }
 }
