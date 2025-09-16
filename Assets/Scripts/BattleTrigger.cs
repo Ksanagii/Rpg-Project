@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,8 +33,11 @@ public class BattleTrigger : MonoBehaviour
                 Debug.Log("Normal battle Started");
                 startBattle = true;
                 BattleManager.Instance.battleEnemiesID.Add(GetComponentInParent<EnemyScene>().enemyID);
+                BattleManager.Instance.enemySO = GetComponentInParent<EnemyScene>().enemyData;
                 StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha (para alguma animação ou efeito visual)
             }
+
+            /*
             else
             {
                 // INICIAR BATALHA COM BUFF
@@ -45,6 +47,7 @@ public class BattleTrigger : MonoBehaviour
                 StartCoroutine(WaitForSecondsToBattle(2f));
 
             }
+            */
 
         }
     }
@@ -52,6 +55,6 @@ public class BattleTrigger : MonoBehaviour
     IEnumerator WaitForSecondsToBattle(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        SceneManager.LoadScene("BattleScene"); // Substitua "BattleScene" pelo nome da sua cena de batalha
+        SceneManager.LoadScene("BattleScene");
     }
 }

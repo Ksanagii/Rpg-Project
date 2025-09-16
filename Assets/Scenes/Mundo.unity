@@ -248,9 +248,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detect: 0
-  enemyID: pao
+  enemyID: Esqueleto
   moveSpeed: 4
   player: {fileID: 1777109810}
+  enemyData: {fileID: 11400000, guid: 9c176eab323094f4f963610985cf9680, type: 2}
 --- !u!212 &219888726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -415,8 +416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1777109810}
   playerTransform: {x: 0, y: 0, z: 0}
-  lastEnemyBattled: {fileID: 0}
   battleEnemiesID: []
+  enemySO: {fileID: 0}
 --- !u!1 &1129710626
 GameObject:
   m_ObjectHideFlags: 0

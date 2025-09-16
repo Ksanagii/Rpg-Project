@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class Unit : MonoBehaviour
@@ -20,5 +21,15 @@ public class Unit : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public bool TakeDamage(int dmg)
+    {
+        currentHP -= dmg;
+        if (currentHP <= 0)
+        {
+            return true;
+        }
+        return false;
     }
 }

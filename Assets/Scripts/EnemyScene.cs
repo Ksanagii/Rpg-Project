@@ -6,6 +6,7 @@ public class EnemyScene : MonoBehaviour
     public string enemyID;
     [SerializeField] float moveSpeed;
     public GameObject player;
+    public EnemyScriptableObject enemyData;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

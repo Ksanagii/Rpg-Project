@@ -10,8 +10,8 @@ public class BattleManager : MonoBehaviour
     public static BattleManager Instance { get; private set; }
     public GameObject player;
     public Vector3 playerTransform; // Player posicao
-    public GameObject lastEnemyBattled;
     public List<string> battleEnemiesID = new List<String>(); // ID do inimigo da batalha atual
+    public EnemyScriptableObject enemySO; // referencia do inimigo da batalha atual
 
     private void Awake()
     {
