@@ -21,6 +21,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
+    }
+
+    void FixedUpdate()
+    {
         float xRaw = Input.GetAxisRaw("Horizontal");
         float yRaw = Input.GetAxisRaw("Vertical");
         direction = new(xRaw, yRaw);
@@ -29,9 +36,8 @@ public class Player : MonoBehaviour
 
         // Move o player
         transform.position = new(
-            transform.position.x + (direction.x * velocity * Time.deltaTime),
-            transform.position.y + (direction.y * velocity * Time.deltaTime));
-
+            transform.position.x + (direction.x * velocity * Time.fixedDeltaTime),
+            transform.position.y + (direction.y * velocity * Time.fixedDeltaTime));
 
     }
 }

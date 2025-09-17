@@ -43,6 +43,7 @@ public class BattleTrigger : MonoBehaviour
                 // INICIAR BATALHA COM BUFF
                 Debug.Log("Buffed battle Started");
                 BattleManager.Instance.battleEnemiesID.Add(GetComponentInParent<EnemyScene>().enemyID);
+                BattleManager.Instance.enemySO = GetComponentInParent<EnemyScene>().enemyData;
                 startBattle = true;
                 StartCoroutine(WaitForSecondsToBattle(2f));
 

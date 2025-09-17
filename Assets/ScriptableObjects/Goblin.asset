@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9681af2fcd40d40b71cfbe2f615a2d, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: 
+  unitID: Goblin
+  portrait: {fileID: -8459539921774777396, guid: 25ab3f01896ecf94989760357ddeb1c2, type: 3}
+  anim: {fileID: 9100000, guid: a1e2ff7eb47b3d44882a5d36b8968ed9, type: 2}
+  unitLevel: 5
+  maxHP: 50
+  damage: 7
+  defense: 2
+  exp: 50

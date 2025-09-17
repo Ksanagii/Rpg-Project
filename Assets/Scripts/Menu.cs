@@ -5,14 +5,9 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(""); // Substitua pelo nome da sua cena de jogo
+        SceneManager.LoadScene("Mundo"); // Substitua pelo nome da sua cena de jogo
     }
 
-    public void OpenSettings()
-    {
-        Debug.Log("Abrindo configurações..."); // Aqui você pode abrir um painel de configurações
-        // Ex: settingsPanel.SetActive(true);
-    }
 
     public void QuitGame()
     {

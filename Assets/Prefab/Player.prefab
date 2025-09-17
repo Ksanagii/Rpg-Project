@@ -158,8 +158,8 @@ MonoBehaviour:
   unitID: Player
   portrait: {fileID: 0}
   unitLevel: 1
-  maxHP: 20
-  currentHP: 20
-  damage: 5
+  maxHP: 32
+  currentHP: 32
+  damage: 10
   defense: 6
   exp: 0

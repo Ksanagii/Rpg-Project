@@ -16,7 +16,7 @@ MonoBehaviour:
   portrait: {fileID: 2058965598896311990, guid: 413587448038a2e49ab45fa62e6c2267, type: 3}
   anim: {fileID: 9100000, guid: f4e0aa50c8a629546918326c1f4fb8fa, type: 2}
   unitLevel: 1
-  maxHP: 30
+  maxHP: 20
   damage: 5
   defense: 2
   exp: 5
