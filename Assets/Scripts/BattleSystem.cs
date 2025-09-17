@@ -1,6 +1,5 @@
 using System.Collections;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +10,7 @@ public class BattleSystem : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
     public GameObject actionsCanvas;
+    public GameObject victoryScreen;
 
     public Transform playerBattlePoint;
     public Transform enemyBattlePoint;
@@ -26,9 +26,14 @@ public class BattleSystem : MonoBehaviour
     public BattleHUD enemyHUD;
 
     public Animator enemyAnimator;
-    public Animator playerAnimator;
+    public Animator playerAnimator; 
+
+    AudioSource audioSource;
+    public AudioClip victorySound;
+    public AudioSource audioSourceBattle;
     void Start()
     {
+        audioSource = GetComponentInChildren<AudioSource>();
         state = BattleState.START;
         StartCoroutine(SetupBattle());
     }
@@ -115,9 +120,12 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator WonBattle()
     {
+        audioSourceBattle.Stop();
+        audioSource.PlayOneShot(victorySound);
         dialogueText.text = "Voce venceu a batalha!";
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Mundo");
+        victoryScreen.SetActive(true);
+
     }
     IEnumerator LostBattle()
     {

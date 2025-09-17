@@ -142,6 +142,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -422,7 +448,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Freebie Pixel Emojis_0: -172181849618794806
+      Freebie Pixel Emojis_1: 8149098342910014066
+      Freebie Pixel Emojis_10: -6919372800472517889
+      Freebie Pixel Emojis_11: 4250954312881310240
+      Freebie Pixel Emojis_2: 3914442864024826262
+      Freebie Pixel Emojis_3: -602944991603940581
+      Freebie Pixel Emojis_4: -370697742114819515
+      Freebie Pixel Emojis_5: 1969368945094500092
+      Freebie Pixel Emojis_6: 1175582965724511069
+      Freebie Pixel Emojis_7: 7504953972463722887
+      Freebie Pixel Emojis_8: 7826065472700154690
+      Freebie Pixel Emojis_9: 2256046585128578649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

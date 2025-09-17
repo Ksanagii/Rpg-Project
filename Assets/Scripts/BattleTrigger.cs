@@ -34,7 +34,7 @@ public class BattleTrigger : MonoBehaviour
                 startBattle = true;
                 BattleManager.Instance.battleEnemiesID.Add(GetComponentInParent<EnemyScene>().enemyID);
                 BattleManager.Instance.enemySO = GetComponentInParent<EnemyScene>().enemyData;
-                StartCoroutine(WaitForSecondsToBattle(2f)); // Espera 2 segundos antes de iniciar a batalha (para alguma animação ou efeito visual)
+                StartCoroutine(WaitForSecondsToBattle(0.5f)); // Espera 1 segundo antes de iniciar a batalha (para alguma animação ou efeito visual)
             }
 
             
@@ -45,7 +45,7 @@ public class BattleTrigger : MonoBehaviour
                 BattleManager.Instance.battleEnemiesID.Add(GetComponentInParent<EnemyScene>().enemyID);
                 BattleManager.Instance.enemySO = GetComponentInParent<EnemyScene>().enemyData;
                 startBattle = true;
-                StartCoroutine(WaitForSecondsToBattle(2f));
+                StartCoroutine(WaitForSecondsToBattle(0.5f));
 
             }
             

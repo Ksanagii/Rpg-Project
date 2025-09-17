@@ -346,7 +346,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: a7f31948c8505fd4b893f3020f389e38, type: 3}
   m_Resource: {fileID: 8300000, guid: a7f31948c8505fd4b893f3020f389e38, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.464
+  m_Volume: 0.595
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -117717,7 +117717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb9de31b7a69f043819f46aadfe9571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 4
+  velocity: 5
 --- !u!212 &1777109812
 SpriteRenderer:
   m_ObjectHideFlags: 0

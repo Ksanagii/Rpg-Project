@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+
+    public void MudarCena(string cena)
     {
-        SceneManager.LoadScene("Mundo"); // Substitua pelo nome da sua cena de jogo
+        SceneManager.LoadScene(cena); // Substitua pelo nome da sua cena de jogo
     }
 
 
